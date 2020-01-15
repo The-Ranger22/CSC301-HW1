@@ -33,7 +33,7 @@ $uImg = "";
             </div>
             <div class="row cstm-border standard-container">
                 <div class="col">
-                    <?php echo $email ?>
+                    <?php echo $email?>
                 </div>
             </div>
         </div>
