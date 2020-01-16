@@ -21,7 +21,8 @@ $name = "Levi Schanding";
 $email = "schandingl1@nku.edu";
 $uMajor = "Computer Science";
 $uYear = "Junior";
-$uImg = "";
+$uImg = "img/dummy_pic.png";
+$bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ornare enim. Vestibulum ut tortor eget magna vehicula ultricies eu non tellus. Nunc cursus malesuada justo, eget egestas enim cursus eu. Nunc sed neque in eros tincidunt lacinia sed sed tortor. Quisque aliquam semper dignissim. Vivamus gravida consectetur dolor ut sollicitudin. Aenean aliquet euismod ipsum, id sollicitudin sem pulvinar in. Ut tempor massa vel risus pretium dapibus. Praesent at nulla nec est dictum finibus.";
 ?>
 
 <div class="container-fluid" id="animate-area">
@@ -33,9 +34,24 @@ $uImg = "";
             </div>
             <div class="row cstm-border standard-container">
                 <div class="col">
-                    <?php echo $email?>
+                    <div class="row">
+                        <div class="col"></div>
+                        <img class="cstm-border col-4 p-null m-null" src="<?php echo $uImg ?>"/>
+                        <div class="col"></div>
+                    </div>
+                    <div class="spacer2"></div>
+                    <div class="row">
+                        <a class="col header-text text-center" href="mailto:<?php echo $email ?>">Email me here!</a>
+                    </div>
+                    <div class="row">
+                        <h3 class="col header-text">Bio:</h3>
+                    </div>
+                    <div class="row">
+                        <p class="col text-center"><?php echo $bio ?></p>
+                    </div>
                 </div>
             </div>
+            <div class="spacer2"></div>
         </div>
         <div class="col"></div>
     </div>

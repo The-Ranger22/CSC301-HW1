@@ -158,6 +158,9 @@ I want to throttle whoever programmed this !@#$. Can't get
 .p-rgt-10{
     padding-right: 10px;
 }
+.p-null{
+    padding: 0;
+}
 .m-top-10{
     margin-top: 10px;
 }
@@ -169,6 +172,12 @@ I want to throttle whoever programmed this !@#$. Can't get
 }
 .m-rgt-10{
     margin-right: 10px;
+}
+.m-null{
+    margin: 0;
+}
+.unli{
+    text-decoration: underline;
 }
 .ico-style{
     font-family: 'Press Start 2P', sans-serif; !important;
