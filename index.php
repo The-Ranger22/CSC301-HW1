@@ -9,7 +9,10 @@ $email = "schandingl1@nku.edu";
 $uMajor = "Computer Science";
 $uYear = "Junior";
 $uImg = "img/dummy_pic.png";
-$bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ornare enim. Vestibulum ut tortor eget magna vehicula ultricies eu non tellus. Nunc cursus malesuada justo, eget egestas enim cursus eu. Nunc sed neque in eros tincidunt lacinia sed sed tortor. Quisque aliquam semper dignissim. Vivamus gravida consectetur dolor ut sollicitudin. Aenean aliquet euismod ipsum, id sollicitudin sem pulvinar in. Ut tempor massa vel risus pretium dapibus. Praesent at nulla nec est dictum finibus.";
+$bio = "Hello, I'm Levi Schanding. I'm currently in my Junior year at NKU with my major being Computer Science. I got interested in CS because of video games, but have stayed interested because of how cool it is. What other field can offer the emotional roller coaster of testing a program? I enjoy programming, playing games, and trying to learn new things.";
+$uInterests = "Programming, NASA, Video Games, D&D, drawing";
+$uFacts = "I wake up before my alarm clock and I don't know why";
+$reason = "I enjoyed INF286, and I'm interested in finding out how server side programming works. By the end of the class, I hope to have a solid understanding of how server side programming works and to be able to apply said understanding efficiently and effectively.";
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +25,7 @@ $bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ornare e
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
-    <title>Hello, world!</title>
+    <title>CSC301-HW1</title>
 </head>
 <body>
 
@@ -39,29 +42,56 @@ $bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec ornare e
                     <div class="row">
                         <div class="col-8">
                             <div class="row header-text">
-                                <div class="col">Major: <?= $uMajor ?></div>
-                                <div class="col">Year: <?= $uYear ?></div>
+                                <div class="col cstm-border m-rgt-5">Major: <?= $uMajor ?></div>
+                                <div class="col cstm-border m-rgt-5">Year: <?= $uYear ?></div>
+                            </div>
+                            <div class="row s-5"></div>
+                            <div class="row header-text">
+                                <div class="col m-rgt-5 cstm-border">Interests: <?= $uInterests ?></div>
+                            </div>
+                            <div class="row s-5"></div>
+                            <div class="row header-text">
+                                <div class="col m-rgt-5 cstm-border">Fun Fact: <?=$uFacts?></div>
+                            </div>
+                            <div class="row s-5"></div>
+                            <div class="row">
+                                <div class="col m-rgt-5 cstm-border">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <p class="col header-text">Why CSC301?</p>
+                                            </div>
+                                            <div class="row">
+                                                <p class="col text-white"><?= $reason ?></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row s-5"></div>
+                            <div class="row">
+                                <div class="col m-rgt-5 cstm-border">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="row">
+                                                <p class="col header-text">Bio</p>
+                                            </div>
+                                            <div class="row">
+                                                <p class="col text-white"><?= $bio ?></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row s-5"></div>
+                            <div class="row">
+                                <a class="col header-text text-center cstm-border m-rgt-5" href="mailto:<?= $email ?>">Email me at <?= $email ?></a>
                             </div>
                         </div>
-                        <img class="cstm-border col-4 p-null m-null" src="<?= $uImg ?>"/>
-                    </div>
-                    <div class="spacer2"></div>
-                    <div class="row">
-                        <a class="col header-text text-center" href="mailto:<?= $email ?>">Email me here!</a>
-                    </div>
-                    <div class="row standard-container cstm-border">
-                        <div class="col">
-                            <div class="row">
-                                <h4 class="col header-text">Bio:</h4>
-                            </div>
-                            <div class="row">
-                                <p class="col text-center"><?= $bio ?></p>
-                            </div>
-                        </div>
+                        <img class="cstm-border col-4 p-null " src="<?= $uImg ?>"/>
                     </div>
                 </div>
             </div>
-            <div class="spacer2"></div>
         </div>
         <div class="col"></div>
     </div>

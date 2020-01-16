@@ -25,6 +25,10 @@ p{
     display: block;
     min-height: 1rem;
 }
+.s-5{
+    display: block;
+    min-height: 5px;
+}
 .scs-bg-hdr{
     font-family: 'Press Start 2P', sans-serif;
     background: -webkit-linear-gradient(orangered, gold);
@@ -78,36 +82,6 @@ p{
     border-image-repeat: repeat;
     border-image-slice: 30%;
 }
-/*
-I want to throttle whoever programmed this !@#$. Can't get
- rid of that stupid white outline on the nav items.
-*/
-.nav-link{
-    border: 0; !important;
-}
-.nav-link.focus{
-    border: 0; !important;
-    border-color: transparent; !important;
-}
-.nav-tabs{
-    border: 0; !important;
-    border-radius: 0; !important;
-}
-.nav-tabs.hover{
-    border: 0; !important;
-}
-.nav-tabs.active{
-    border: 0; !important;
-    border-radius: 0; !important;
-}
-.nav-item.show{
-    border: 0; !important;
-}
-.nav-item{
-    border: 0; !important;
-}
-
-
 .cstm-border{
     border: 8px solid transparent;
     border-radius: 5px;
@@ -132,7 +106,6 @@ I want to throttle whoever programmed this !@#$. Can't get
     font-family: 'Source Code Pro', sans-serif;
     background-color: #000035;
     color: white;
-
 }
 .footer-container{
     font-family: 'Source Code Pro', sans-serif;
@@ -160,6 +133,9 @@ I want to throttle whoever programmed this !@#$. Can't get
 }
 .p-null{
     padding: 0;
+}
+.m-rgt-5{
+    margin-right: 5px;
 }
 .m-top-10{
     margin-top: 10px;
